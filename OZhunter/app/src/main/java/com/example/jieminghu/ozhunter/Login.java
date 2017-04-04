@@ -35,16 +35,5 @@ public class Login extends AppCompatActivity {
             }
         });
 
-
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.function);
-//        login = (Button)findViewById(R.id.loginbutton);
-//        login.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(Login.this,function.class);
-//                startActivity(i);
-//            }
-//        });
     }
 }
