@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context="com.example.yushen.functionforapp.discountpart">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ImageButton
+        android:id="@+id/imageButton_dj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/dj"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton_jbhifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/jbhifi"
+        android:layout_alignBottom="@+id/imageButton_dj"
+        android:layout_toRightOf="@+id/imageButton_dj"
+        android:layout_toEndOf="@+id/imageButton_dj" />
+
+    <ImageButton
+        android:id="@+id/imageButton_officeworks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ow"
+        android:layout_alignBottom="@+id/imageButton_chemistwarehouse"
+        android:layout_toRightOf="@+id/imageButton_chemistwarehouse"
+        android:layout_toEndOf="@+id/imageButton_chemistwarehouse" />
+
+    <ImageButton
+        android:id="@+id/imageButton_chemistwarehouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/cw"
+        android:layout_below="@+id/imageButton_dj"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton_myer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/myer"
+        android:layout_alignBottom="@+id/imageButton_officeworks"
+        android:layout_toRightOf="@+id/imageButton_officeworks"
+        android:layout_toEndOf="@+id/imageButton_officeworks" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageButton_officeworks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</RelativeLayout>

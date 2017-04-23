@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yushen.functionforapp.ChatWithPeople">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="88dp"
+        android:layout_height="81dp"
+        app:srcCompat="@mipmap/touxiang1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="37dp"
+        android:layout_alignBottom="@+id/boy2"
+        android:layout_alignRight="@+id/girl1"
+        android:layout_alignEnd="@+id/girl1"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="95dp"
+        android:layout_height="82dp"
+        app:srcCompat="@mipmap/images4"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="144dp"
+        android:layout_marginTop="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/girl1"
+        android:layout_toStartOf="@+id/girl1"
+        android:layout_marginRight="51dp"
+        android:layout_marginEnd="51dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="104dp"
+        android:layout_height="91dp"
+        app:srcCompat="@mipmap/images5"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="253dp"
+        android:layout_marginBottom="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/girl1"
+        android:layout_alignStart="@+id/girl1" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="120dp"
+        android:layout_height="125dp"
+        app:srcCompat="@mipmap/images7"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="357dp"
+        android:layout_above="@+id/imageView5"
+        android:layout_alignRight="@+id/boy2"
+        android:layout_alignEnd="@+id/boy2"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/girl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact me"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="56dp"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/boy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact me"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="162dp"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="31dp" />
+
+    <Button
+        android:id="@+id/boy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact me"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="263dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignRight="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageView6" />
+
+    <Button
+        android:id="@+id/boy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact me"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="368dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignRight="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4"
+        android:layout_marginTop="57dp" />
+
+</RelativeLayout>
