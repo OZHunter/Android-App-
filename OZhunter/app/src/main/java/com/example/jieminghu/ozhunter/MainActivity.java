@@ -34,17 +34,15 @@ public class MainActivity extends AppCompatActivity {
         edit.setText("");
         total="";
     }
-    public void OnLog(View v){
-        //EditText edit=(EditText)findViewById(R.id.input);
-        edit.setText(total+"@");
-        total+="@";
+
+    public void OnShipping(View v){
+        //EditText edit2=(EditText)findViewById(R.id.input);
+        edit.setText(total+"+20");
+
     }
 
-    public void OnPow(View v){
-        //EditText edit=(EditText)findViewById(R.id.input);
-        edit.setText(total+"^");
-        total+="^";
-    }
+
+
 
     public void OnX(View v){
         //EditText edit=(EditText)findViewById(R.id.input);
@@ -52,10 +50,6 @@ public class MainActivity extends AppCompatActivity {
         total+="1/";
     }
 
-    public void OnNotation(View v){
-        Intent i=new Intent(this,Notation.class);
-        startActivity(i);
-    }
 
     public void OnDelete(View view){
         if (total.length() > 1){
@@ -68,10 +62,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void OnTri(View v){
-        Intent i=new Intent(this,TriActivity.class);
-        startActivity(i);
-    }
+
     /*public String add_zero(String initial){
         List<String> tmp_string = ParseTreeNode.reconnectString(initial);
         int length = tmp_string.size();
@@ -160,20 +151,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void getResult(View view){
-        //String tmp = edit.getText().toString();
-       // edit.setText(total + "******");
-        //tt = edit.getText().toString();
-       //double result = ParseTreeNode.evaluateParserTree(parseAddSub());
-       // String result_string = Double.toString(result);
-       // edit.setText(tt + "=" + result_string);
-        //String tmp = edit.getText().toString();
-        //edit.setText(tmp + "=");
-        //String tmp = edit.getText().toString();
         parseExpression ee = new parseExpression();
         double result = ParseTreeNode.evaluateParserTree(ee.parseAddSub());
         edit.setText(total + "="+ Double.toString(result));
+        edit.setText(total + "="+ Double.toString(result+20));
         //total=Double.toString(result);
     }
+
+
 
     class parseExpression {
         //MainActivity t = new MainActivity();

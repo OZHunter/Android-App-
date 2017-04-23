@@ -22,8 +22,6 @@
         </activity>
         <activity android:name=".function">
         </activity>
-        <activity android:name=".Notation" />
-        <activity android:name=".TriActivity"/>
 
     </application>
 

@@ -248,47 +248,7 @@
             android:onClick="OnClick" />
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <Button
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/LOG"
-            android:text="LOG"
-            android:textSize="30dp"
-            android:onClick="OnLog" />
-        <Button
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/pow"
-            android:text="pow"
-            android:elegantTextHeight="false"
-            android:textSize="30dp"
-            android:onClick="OnPow" />
-        <Button
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/trigonometric"
-            android:text="tri"
-            android:elegantTextHeight="false"
-            android:textColor="#ff000000"
-            android:textSize="30dp"
-            android:onClick="OnTri" />
-        <Button
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/equal"
-            android:text="="
-            android:textSize="30dp"
-            android:onClick="getResult"/>
-    </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -298,26 +258,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/Trigonometric"
-            android:text="Notation"
+            android:text="Shipping Fee"
             android:elegantTextHeight="false"
             android:textColor="#ff000000"
             android:textSize="30dp"
-            android:onClick="OnNotation" />
+            android:onClick="OnShipping" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <Button
-            android:layout_weight="1"
+            android:id="@+id/equal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/history"
-            android:text="history"
-            android:elegantTextHeight="false"
-            android:textColor="#ff000000"
-            android:textSize="30dp"
-            android:onClick="OnHistory" />
+            android:layout_weight="1"
+            android:onClick="getResult"
+            android:text="="
+            android:textSize="30dp" />
     </LinearLayout>
 
 
